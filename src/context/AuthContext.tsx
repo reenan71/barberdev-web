@@ -18,7 +18,7 @@ interface UserProps{
     name: string;
     email: string;
     endereco: string | null;
-    subscription?: SubscriptionProps | null;
+    subscriptions?: SubscriptionProps | null;
 }
 
 interface SubscriptionProps{
@@ -72,7 +72,7 @@ export function AuthProvider({children}: Readonly<AuthProviderProps>) {
                 name,
                 email,
                 endereco, 
-                subscriptions
+                subscriptions,
             })
 
         })

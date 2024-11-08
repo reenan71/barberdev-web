@@ -23,6 +23,7 @@ export interface ScheduleItem{
   id: string;
   customer: string;
   haircut:{
+    name: string;
     id: string;
     price: string | number;
     user_id: string;
@@ -37,7 +38,7 @@ interface DashboardProps {
 
 
 
-export default function Dashboard({schedule}: DashboardProps) {
+export default function Dashboard({schedule}: Readonly<DashboardProps>) {
 
   const [listHaircut, setListHaircut] = useState(schedule)
   const [service, setService] = useState<ScheduleItem>()
@@ -64,7 +65,7 @@ export default function Dashboard({schedule}: DashboardProps) {
               Agenda
             </Heading>
             <Link href="/new">
-              <Button fontSize="3xl" align="center" justify="center">+</Button>
+              <Button fontSize="3xl" alignItems="center" justifyContent="center">+</Button>
             </Link>
           </Flex>
 
