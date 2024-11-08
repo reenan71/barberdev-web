@@ -53,7 +53,7 @@ import {
                     isOpen={isOpen}
                     placement="left"
                     returnFocusOnClose={false}
-                    onOverLayClick={onClose}
+                    onOverlayClick={onClose}
                     size="full"
                     onClose={onClose}
                 >
