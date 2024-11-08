@@ -47,7 +47,6 @@ import {
          <Box minH="100vh" bg="barber.900">
             <SidebarContent
                 onClose={() => onClose} display={{ base: 'none', md: "block"}} />
-
                 <Drawer
                     autoFocus={false}
                     isOpen={isOpen}
