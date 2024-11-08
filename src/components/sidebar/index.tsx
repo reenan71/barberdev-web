@@ -38,7 +38,7 @@ import {
 
 
 
- export function Sidebar({children}: {children: ReactNode}){
+ export function Sidebar({children}: Readonly<{children: ReactNode}>){
 
     const {isOpen, onClose, onOpen } = useDisclosure();
     
